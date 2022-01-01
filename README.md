@@ -52,4 +52,12 @@ sudo apt-get install unattended-upgrades apt-listchanges
 sudo editor /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
+```
+echo unattended-upgrades unattended-upgrades/enable_auto_updates boolean true | sudo debconf-set-selections
+```
+
+```
+sudo dpkg-reconfigure -f noninteractive unattended-upgrades
+```
+
 **FIXME: incomplete**
