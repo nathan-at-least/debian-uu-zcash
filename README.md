@@ -45,11 +45,11 @@ zcash-fetch-params
 Steps:
 
 ```
-# apt-get install unattended-upgrades apt-listchanges
+sudo apt-get install unattended-upgrades apt-listchanges
 ```
 
 ```
-# editor /etc/apt/apt.conf.d/50unattended-upgrades
+sudo editor /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
 **FIXME: incomplete**
