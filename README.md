@@ -14,8 +14,13 @@ Some users may want to permanently opt-in to future ECC `zcashd` releases as soo
 
 ```
 sudo apt-get update && sudo apt-get install apt-transport-https wget gnupg2
+```
 
+```
 wget -qO - https://apt.z.cash/zcash.asc | gpg --import
+```
+
+```
 gpg --export 3FE63B67F85EA808DE9B880E6DEF3BAF272766C0 | sudo apt-key add -
 ```
 
@@ -23,9 +28,13 @@ Verify the key fingerprint listed on the reference page. By verifying it against
 
 ```
 echo "deb [arch=amd64] https://apt.z.cash/ stretch main" | sudo tee /etc/apt/sources.list.d/zcash.list
+```
 
+```
 sudo apt-get update && sudo apt-get install zcash
+```
 
+```
 zcash-fetch-params
 ```
 
@@ -37,7 +46,9 @@ Steps:
 
 ```
 # apt-get install unattended-upgrades apt-listchanges
+```
 
+```
 # editor /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
